@@ -30,12 +30,11 @@ Create a Python module that demonstrates skills in fetching data from the web, p
 
 #### 1. Environment Setup
 
-Create and activate a Python virtual environment for the project.
-Document the process and packages installed in your README.
-Note your operating system and provide the commands you used on your machine.
-You do not have to provide commands for other operating systems.
-
-After installing the required dependencies, redirect the output of the pip freeze command to a requirements.txt file in your root project folder.
+1. Create and activate a Python virtual environment for the project.
+1. Install all required packages into your local project virtual environment.
+1. After installing the required dependencies, redirect the output of the pip freeze command to a requirements.txt file in your root project folder.
+1. Document the process and commands you used in your README.md.
+1. Add a .gitignore file to your project to exclude the virtual environment folder, your .vscode settings folder, and any other files that do not need to be committed to GitHub.
 
 Windows example:
 
@@ -55,12 +54,15 @@ python3 -m pip install requests
 python3 -m pip freeze > requirements.txt
 ```
 
-Add a .gitignore file to your project to exclude the virtual environment folder, your .vscode settings folder, and any other files that do not need to be committed to GitHub.
+#### 2. Project Start
 
-#### 2. Import Project Packages
+Create a docstring with a brief introduction to your project.
+
+#### 3. Import Dependencies
 
 Organize your project imports following conventions.
-For example, standard library imports first, then external library imports, then local module imports. Continue to practice importing your own modules and reuse your prior code when building your project folders.
+For example, standard library imports first, then external library imports, then local module imports. 
+Continue to practice importing your own modules and reuse your prior code when building your project folders.
 Conventional package import organization example:
 
 ```python
@@ -77,7 +79,7 @@ import yourname_attr
 import yourname_projsetup 
 ```
 
-#### 3. Fetch Data
+#### 4.  Data Acquisition
 
 Use the requests library to fetch data from specified web APIs or online data sources.
 This will include JSON, CSV, and plain text data.
@@ -103,7 +105,7 @@ def fetch_and_write_excel_data(folder_name, filename, url):
 
 ```
 
-#### 4. Write Data
+#### 5. Write Data
 
 Write functions to save content to different file types (e.g., text, CSV, JSON).
 For example:
@@ -125,7 +127,7 @@ def write_excel_file(folder_name, filename, data):
         print(f"Excel data saved to {file_path}")
 ```
 
-#### 5. Process Data and Generate Output
+#### 6. Process Data and Generate Output
 
 Write functions to read, process, and write results using appropriate Python collections (lists, sets, dictionaries, etc.). Demonstrate understanding of each collection data type's characteristics and usage.
 
@@ -146,7 +148,7 @@ Function 4. Process JSON Data:
 Process JSON data with dictionaries to demonstrate proficiency in working with labeled data.
 Parse the JSON data to extract relevant information and present it in a simplified, human-readable text format.
 
-#### 6. Implement Exception Handling
+#### 7. Implement Exception Handling
 
 We know that reading and writing files - especially fetching items from the web is unreliable.
 Even with perfect code, there are many things that can go wrong.
@@ -182,7 +184,7 @@ def fetch_txt_data(folder_name, url):
         print(f"I/O error({e.errno}): {e.strerror}")
 ```
 
-#### 7. Main Function
+#### 8. Main Function
 
 Implement a `main()` function to test the folder creation functions and demonstrate the use of imported modules. For example:
 
