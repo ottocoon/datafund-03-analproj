@@ -35,6 +35,8 @@ Document the process and packages used in your README.
 Note your operating system and provide the exact commands and process you used on your machine.
 You do not have to provide commands for other operating systems.
 
+Add a .gitignore file to your project to exclude the virtual environment folder, your .vscode settings folder, and any other files that do not need to be committed to GitHub.
+
 #### 2. Import Project Packages
 
 Organize your project imports following conventions.
