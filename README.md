@@ -30,12 +30,30 @@ Create a Python module that demonstrates skills in fetching data from the web, p
 
 #### 1. Environment Setup
 
-Set up a Python virtual environment for the project.
-Document the process and packages used in your README.
-Note your operating system and provide the exact commands and process you used on your machine.
+Create and activate a Python virtual environment for the project.
+Document the process and packages installed in your README.
+Note your operating system and provide the commands you used on your machine.
 You do not have to provide commands for other operating systems.
 
 After installing the required dependencies, redirect the output of the pip freeze command to a requirements.txt file in your root project folder.
+
+Windows example:
+
+```Powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+py -m pip install requests
+py -m pip freeze > requirements.txt
+```
+
+Mac example:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install requests
+python3 -m pip freeze > requirements.txt
+```
 
 Add a .gitignore file to your project to exclude the virtual environment folder, your .vscode settings folder, and any other files that do not need to be committed to GitHub.
 
