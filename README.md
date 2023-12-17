@@ -11,24 +11,22 @@ The project involves fetching data from the web, processing it using appropriate
 - Documentation:      README.md
 - Script:             yourname_analytics.py
 
-Create a new GitHub repository with a README.md. Create a new file with the specified name. Feel free to use a pseudonym or brand name.
+Create a new GitHub repository with a default README.md.
 
-### Version Control with Git
+## Version Control with Git
 
 Use Git for version control.
 In your README.md, document the steps of initializing a new project in GitHub and on your machine.
 Explain the process for creating the repository in both places,
 and document your workflow as you edit, add, commit, and push to GitHub.
 
-## Module Specification
-
-### Objective
+## Objective
 
 Create a Python module that demonstrates skills in fetching data from the web, processing it using Python collections, and writing the processed data to different file formats.
 
-### Requirements
+## Requirements
 
-#### 1. Environment Setup
+### 1. Environment Setup
 
 1. Create and activate a Python virtual environment for the project.
 1. Install all required packages into your local project virtual environment.
@@ -54,11 +52,11 @@ python3 -m pip install requests
 python3 -m pip freeze > requirements.txt
 ```
 
-#### 2. Project Start
+### 2. Project Start
 
 Create a docstring with a brief introduction to your project.
 
-#### 3. Import Dependencies
+### 3. Import Dependencies
 
 Organize your project imports following conventions.
 For example, standard library imports first, then external library imports, then local module imports. 
@@ -79,7 +77,7 @@ import yourname_attr
 import yourname_projsetup 
 ```
 
-#### 4.  Data Acquisition
+### 4.  Data Acquisition
 
 Use the requests library to fetch data from specified web APIs or online data sources.
 This will include JSON, CSV, and plain text data.
@@ -105,7 +103,7 @@ def fetch_and_write_excel_data(folder_name, filename, url):
 
 ```
 
-#### 5. Write Data
+### 5. Write Data
 
 Write functions to save content to different file types (e.g., text, CSV, JSON).
 For example:
@@ -127,7 +125,7 @@ def write_excel_file(folder_name, filename, data):
         print(f"Excel data saved to {file_path}")
 ```
 
-#### 6. Process Data and Generate Output
+### 6. Process Data and Generate Output
 
 Write functions to read, process, and write results using appropriate Python collections (lists, sets, dictionaries, etc.). Demonstrate understanding of each collection data type's characteristics and usage.
 
@@ -148,7 +146,7 @@ Function 4. Process JSON Data:
 Process JSON data with dictionaries to demonstrate proficiency in working with labeled data.
 Parse the JSON data to extract relevant information and present it in a simplified, human-readable text format.
 
-#### 7. Implement Exception Handling
+### 7. Implement Exception Handling
 
 We know that reading and writing files - especially fetching items from the web is unreliable.
 Even with perfect code, there are many things that can go wrong.
@@ -184,7 +182,7 @@ def fetch_txt_data(folder_name, url):
         print(f"I/O error({e.errno}): {e.strerror}")
 ```
 
-#### 8. Main Function
+### 8. Main Function
 
 Implement a `main()` function to test the folder creation functions and demonstrate the use of imported modules. For example:
 
@@ -224,18 +222,17 @@ def main():
 
 ```
 
-### Conditional Script Execution
+### 9. Conditional Script Execution
 
 Ensure the main function only executes when the script is run directly,
 not when imported as a module by using standard boilerplate code.
 
-### Module Design
+## Module Design
 
-- Include a docstring at the top of the file describing its purpose.
-- The code should be clear, well-organized, and demonstrate good practices.
-- Include comments and docstrings for clarity.
+The code should be clear, well-organized, and demonstrate good practices.
+Include comments and docstrings for clarity.
 
-### Evaluation Criteria
+## Evaluation Criteria
 
 - Functionality: The project should be functional and meet all requirements.
 - Documentation: The project should be well-written and well-documented.
