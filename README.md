@@ -220,6 +220,11 @@ def main():
     process_excel_file(excel_folder_name,'data.xls', 'results_xls.txt')
     process_json_file(json_folder_name,'data.json', 'results_json.txt')
 
+    # Find some data you care about. What format is it? How will you ingest the data?
+    # What do you want to extract and write? What export format will you use?
+    # Process at least TWO unique data sets and describe your work clearly.
+    # Use the README.md and your code to showcase your ability to work with data.
+
 ```
 
 ### 9. Conditional Script Execution
