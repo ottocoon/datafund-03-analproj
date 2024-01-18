@@ -11,7 +11,14 @@ The project involves fetching data from the web, processing it using appropriate
 - Documentation:      README.md
 - Script:             **yourname_analytics.py**
 
-Create a new GitHub repository with a default README.md.
+Create a new GitHub repository with a default README.md and the required name. 
+After creating it, use git to clone it down to your machine. 
+
+## External Dependencies
+
+This project will require the following external modules:
+
+- requests
 
 ## Version Control with Git
 
@@ -25,6 +32,8 @@ and document your workflow as you edit, add, commit, and push to GitHub.
 Create a Python module that demonstrates skills in fetching data from the web, processing it using Python collections, and writing the processed data to different file formats.
 
 ## Requirements
+
+Since the project uses modules beyond the Python Standard Library, create a project virtual environment. 
 
 ### 1. Environment Setup
 
@@ -54,7 +63,7 @@ python3 -m pip freeze > requirements.txt
 
 ### 2. Project Start
 
-Create a docstring with a brief introduction to your project.
+In your Python file, create a docstring with a brief introduction to your project.
 
 ### 3. Import Dependencies
 
@@ -177,7 +186,7 @@ def fetch_txt_data(folder_name, url):
     except requests.exceptions.Timeout as errt:
         print(f"Timeout Error: {errt}")
     except requests.exceptions.RequestException as err:
-        print(f"OOps: Something Else: {err}")
+        print(f"Oops: Something Else: {err}")
     except IOError as e:
         print(f"I/O error({e.errno}): {e.strerror}")
 ```
