@@ -7,9 +7,9 @@ The project involves fetching data from the web, processing it using appropriate
 
 ## Deliverable Names
 
-- GitHub Repository:  datafun-03-analytics
+- GitHub Repository:  **datafun-03-analytics**
 - Documentation:      README.md
-- Script:             yourname_analytics.py
+- Script:             **yourname_analytics.py**
 
 Create a new GitHub repository with a default README.md.
 
