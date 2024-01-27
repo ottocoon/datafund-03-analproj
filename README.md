@@ -41,7 +41,7 @@ Since the project uses modules beyond the Python Standard Library, create a proj
 1. Install all required packages into your local project virtual environment.
 1. After installing the required dependencies, redirect the output of the pip freeze command to a requirements.txt file in your root project folder.
 1. Document the process and commands you used in your README.md.
-1. Add a .gitignore file to your project to exclude the virtual environment folder, your .vscode settings folder, and any other files that do not need to be committed to GitHub.
+1. Add a [.gitignore](.gitignore) file to your project to exclude the virtual environment folder, your .vscode settings folder, and any other files that do not need to be committed to GitHub.
 
 Windows example:
 
