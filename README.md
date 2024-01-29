@@ -236,6 +236,11 @@ def main():
 
 ```
 
+Copies of the data files have been added to this repo. 
+Click on a data file to view it. 
+To save the data, click "Raw" in the upper right - this will show just the raw file content in your browser. 
+In Chrome, right-click and select "Save as ..." to get a local copy to compare. 
+
 ### 9. Conditional Script Execution
 
 Ensure the main function only executes when the script is run directly,
