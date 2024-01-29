@@ -70,9 +70,11 @@ In your Python file, create a docstring with a brief introduction to your projec
 Organize your project imports near the top of the file, following conventions.
 For example, standard library imports first, then external library imports, then local module imports. 
 Continue to practice importing your own modules and reuse your prior code when building your project folders.
-Follow conventional package import organization and alias. 
+Follow conventional package import organization and aliasing. 
 Import each package just once near the top of the file. 
 Be sure you have INSTALLED any external packages (those not in the Python Standard Library) into your active project virtual environment first. 
+
+Note: if we use "import pathlib" as below, we must use "pathlib.Path" when working with a Path. Many other projects use "from pathlib import Path". When using this approach, you omit the initial pathlib in pathlib.Path, and just use Path.
 
 Python import code example:
 
