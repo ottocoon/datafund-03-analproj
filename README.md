@@ -72,7 +72,7 @@ For example, standard library imports first, then external library imports, then
 Continue to practice importing your own modules and reuse your prior code when building your project folders.
 Follow conventional package import organization and alias. 
 Import each package just once near the top of the file. 
-Be sure you have INSTALLED any external packages (outside the Python Standard Library) into your active project virtual environment first. 
+Be sure you have INSTALLED any external packages (those not in the Python Standard Library) into your active project virtual environment first. 
 
 Python import code example:
 
