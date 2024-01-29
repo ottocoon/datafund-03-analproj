@@ -43,7 +43,7 @@ Since the project uses modules beyond the Python Standard Library, create a proj
 1. Document the process and commands you used in your README.md.
 1. Add a [.gitignore](.gitignore) file to your project to exclude the virtual environment folder, your .vscode settings folder, and any other files that do not need to be committed to GitHub.
 
-Windows example:
+Terminal Commands: Windows example - record your process in your README:
 
 ```Powershell
 py -m venv .venv
@@ -52,7 +52,7 @@ py -m pip install requests
 py -m pip freeze > requirements.txt
 ```
 
-Mac example:
+Terminal Commands: Mac example - record your process in your README:
 
 ```bash
 python3 -m venv .venv
@@ -65,12 +65,16 @@ python3 -m pip freeze > requirements.txt
 
 In your Python file, create a docstring with a brief introduction to your project.
 
-### 3. Import Dependencies
+### 3. Import Dependencies (At the Top, After the Introduction)
 
-Organize your project imports following conventions.
+Organize your project imports near the top of the file, following conventions.
 For example, standard library imports first, then external library imports, then local module imports. 
 Continue to practice importing your own modules and reuse your prior code when building your project folders.
-Conventional package import organization example:
+Follow conventional package import organization and alias. 
+Import each package just once near the top of the file. 
+Be sure you have INSTALLED any external packages (outside the Python Standard Library) into your active project virtual environment first. 
+
+Python import code example:
 
 ```python
 
@@ -91,10 +95,10 @@ import yourname_projsetup
 Use the requests library to fetch data from specified web APIs or online data sources.
 This will include JSON, CSV, and plain text data.
 After a successful fetch, call the appropriate write function to save the data to a file.
-For example:
+
+Python fetch functions code examples:
 
 ```python
-import requests
 
 def fetch_and_write_txt_data(folder_name, filename, url):
     response = requests.get(url)
@@ -115,20 +119,20 @@ def fetch_and_write_excel_data(folder_name, filename, url):
 ### 5. Write Data
 
 Write functions to save content to different file types (e.g., text, CSV, JSON).
-For example:
+
+Python write functions code examples:
 
 ```python
-from pathlib import Path
 
 def write_txt_file(folder_name, filename, data):
-    file_path = Path(folder_name).join_path(filename) # use pathlib to join paths
+    file_path = pathlib.Path(folder_name).join_path(filename) # use pathlib to join paths
     with file_path.open('w') as file:
         file.write(data)
         print(f"Text data saved to {file_path}")
 
 
 def write_excel_file(folder_name, filename, data):
-    file_path = Path(folder_name).join_path(filename) # use pathlib to join paths
+    file_path = pathlib.Path(folder_name).join_path(filename) # use pathlib to join paths
     with open(file_path, 'wb') as file:
         file.write(response.content)
         print(f"Excel data saved to {file_path}")
@@ -160,11 +164,10 @@ Parse the JSON data to extract relevant information and present it in a simplifi
 We know that reading and writing files - especially fetching items from the web is unreliable.
 Even with perfect code, there are many things that can go wrong.
 Use try/except/finally and implement exception handling to catch known possible errors and handle them gracefully in at least one of your functions.
-For example:
+
+Python function with exception handling code example:
 
 ```python
-import requests
-from pathlib import Path
 
 def fetch_txt_data(folder_name, url):
     try:
@@ -174,7 +177,7 @@ def fetch_txt_data(folder_name, url):
         # if the HTTP request returns an unsuccessful status code
 
         # Assuming the response content is text data
-        file_path = Path(folder_name) / 'data.txt'
+        file_path = pathlib.Path(folder_name) / 'data.txt'
         with open(file_path, 'w') as file:
             file.write(response.text)
         print(f"Text data saved to {file_path}")
@@ -193,7 +196,9 @@ def fetch_txt_data(folder_name, url):
 
 ### 8. Main Function
 
-Implement a `main()` function to test the folder creation functions and demonstrate the use of imported modules. For example:
+Implement a `main()` function to test the folder creation functions and demonstrate the use of imported modules.
+
+Python main() function code example:
 
 ```python
 def main():
@@ -242,10 +247,15 @@ To save the data, click "Raw" in the upper right - this will show just the raw f
 In Chrome, right-click and select "Save as ..." to get a local copy to compare. 
 This won't work for Excel files - save the .xls file directly from GitHub. 
 
-### 9. Conditional Script Execution
+### 9. Conditional Script Execution (At the end of the file)
 
 Ensure the main function only executes when the script is run directly,
 not when imported as a module by using standard boilerplate code.
+
+```python
+if __name__ == '__main__':
+    main()
+```
 
 ## Module Design
 
