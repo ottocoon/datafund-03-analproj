@@ -240,6 +240,7 @@ Copies of the data files have been added to this repo.
 Click on a data file to view it. 
 To save the data, click "Raw" in the upper right - this will show just the raw file content in your browser. 
 In Chrome, right-click and select "Save as ..." to get a local copy to compare. 
+This won't work for Excel files - save the .xls file directly from GitHub. 
 
 ### 9. Conditional Script Execution
 
