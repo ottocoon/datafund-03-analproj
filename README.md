@@ -36,17 +36,7 @@ This project uses the requests package, which is not included in the Python Stan
 To keep our project separate from all other Python projects,
 we will create and manage a local project virtual environment.
 We'll install our packages into the local project virtual environment.
-The steps in this common workflow are listed below. For detailed steps, see [PROJECT_VIRTUAL_ENV.md](PROJECT_VIRTUAL_ENV.md).
-
-1. Open your project folder in VS Code.
-2. Open a terminal window in VS Code (PowerShell for Windows, zsh or bash for Mac/Linux).
-3. In the terminal, run the command `git pull` first, to make sure you have the current project contents on your machine.
-4. In the terminal, run the command `py -m venv .venv` to create a new .venv environment in the project repo.
-5. In the terminal, activate your environment using the command for your operating system.
-6. In the terminal, use `py -m pip install` command(s) to install necessary packages into your active project virtual environment.
-7. Edit your README.md to record your commands, process, and notes.
-8. In the terminal, run `git add .` then `git commit -m "msg"`, then` git push -u origin main` to add / commit / push to GitHub.
-9. Verify your GitHub repository.
+For the recommended process with detailed steps and commands, see [PROJECT_VIRTUAL_ENV.md](PROJECT_VIRTUAL_ENV.md).
 
 ### 2. Start Python Analytics
 
