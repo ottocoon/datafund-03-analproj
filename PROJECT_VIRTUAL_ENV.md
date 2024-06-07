@@ -14,7 +14,7 @@ Additional details and commands are listed below.
 5. In the terminal, activate your environment using the command for your operating system.
 6. In the terminal, use `py -m pip install` command(s) to install necessary packages into your active project virtual environment.
 7. Edit your README.md to record your commands, process, and notes.
-8. Set your VS Code Python Interpreter so your project dependencies will be able to your Python files. 
+8. Set your VS Code Python Interpreter so your installed packages will be available for import.
 9. In the terminal, run `git add .` then `git commit -m "msg"`, then` git push -u origin main` to add / commit / push to GitHub.
 10. Verify your GitHub repository.
 
