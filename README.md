@@ -11,21 +11,18 @@ The project involves fetching data from the web, processing it using appropriate
 - Documentation:      README.md
 - Script:             **yourname_analytics.py**
 
-Create a new GitHub repository with a default README.md and the required name. 
-After creating it, use git to clone it down to your machine. 
+## Start a New Project
 
-## External Dependencies
+Follow this common workflow to start a new project.
 
-This project will require the following external modules:
-
-- requests
-
-## Version Control with Git
-
-Use Git for version control.
-In your README.md, document the steps of initializing a new project in GitHub and on your machine.
-Explain the process for creating the repository in both places,
-and document your workflow as you edit, add, commit, and push to GitHub.
+1. In your browser, create a GitHub project repository with a default README.md. Name the repo as specified above.
+2. Clone your new repository down to your machine into your Documents folder.
+3. Open your new project repository folder in the Documents folder of your machine in VS Code (if you haven't already).
+4. In VS Code, add a useful .gitignore file with a line for .vsode/ and .venv/ and whatever else doesn't need to be tracked in the repository.
+5. In VS Code, edit your README.md to record your commands, process, and notes so far.
+6. In VS Code, open a terminal - PowerShell if Windows, zsh or bash if Mac/Linux.
+7. Use the terminal to git add your files and folders to source control, and git commit your changes with a useful message (e.g. "initial commit"), and git push the changes up to GitHub.
+8. Verify your GitHub repository.
 
 ## Objective
 
@@ -33,36 +30,27 @@ Create a Python module that demonstrates skills in fetching data from the web, p
 
 ## Requirements
 
-Since the project uses modules beyond the Python Standard Library, create a project virtual environment. 
+### 1. Create and Manage Project Virtual Environment
 
-### 1. Environment Setup
+This project uses the requests package, which is not included in the Python Standard Library - we must install it. 
+To keep our project separate from all other Python projects,
+we will create and manage a local project virtual environment.
+We'll install our packages into the local project virtual environment.
+The steps in this common workflow are listed below. For detailed steps, see [PROJECT_VIRTUAL_ENV.md](PROJECT_VIRTUAL_ENV.md).
 
-1. Create and activate a Python virtual environment for the project.
-1. Install all required packages into your local project virtual environment.
-1. After installing the required dependencies, redirect the output of the pip freeze command to a requirements.txt file in your root project folder.
-1. Document the process and commands you used in your README.md.
-1. Add a [.gitignore](.gitignore) file to your project to exclude the virtual environment folder, your .vscode settings folder, and any other files that do not need to be committed to GitHub.
+1. Open your project folder in VS Code.
+2. Open a terminal window in VS Code (PowerShell for Windows, zsh or bash for Mac/Linux).
+3. In the terminal, run the command `git pull` first, to make sure you have the current project contents on your machine.
+4. In the terminal, run the command `py -m venv .venv` to create a new .venv environment in the project repo.
+5. In the terminal, activate your environment using the command for your operating system.
+6. In the terminal, use `py -m pip install` command(s) to install necessary packages into your active project virtual environment.
+7. Edit your README.md to record your commands, process, and notes.
+8. In the terminal, run `git add .` then `git commit -m "msg"`, then` git push -u origin main` to add / commit / push to GitHub.
+9. Verify your GitHub repository.
 
-Terminal Commands: Windows example - record your process in your README:
+### 2. Start Python Analytics
 
-```Powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-py -m pip install requests
-py -m pip freeze > requirements.txt
-```
-
-Terminal Commands: Mac example - record your process in your README:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install requests
-python3 -m pip freeze > requirements.txt
-```
-
-### 2. Project Start
-
+Create a new Python file named as shown above. 
 In your Python file, create a docstring with a brief introduction to your project.
 
 ### 3. Import Dependencies (At the Top, After the Introduction)
